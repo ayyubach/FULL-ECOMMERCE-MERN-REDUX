@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    height: 100%;
+    position: relative;
+}
+
+/* NavBar */ 
+
+.navbar{
+    z-index: 1000;
+    height: 8vh;
+    color:#ffffff;
+    background-color: #0275d8;
+    }
+
+.nav-buttons{
+    flex-grow:1;
+     height: 100%; 
+     align-items: flex-end;
+}
+
+.nav-button{
+    
+    padding-top: 5px;
+    height: 100%;
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-button2 {
+    z-index: 1000;
+    display: none;
+    list-style: none;
+    background-color:#2279c5;
+    height: 180px;
+    width: 120%;
+    border-radius: 5px;
+}
+
+.nav-button2.show{
+    
+    display: block;
+
+}
+
+.nav-button ul li{
+    
+margin: 15px 10px 20px 0;
+}
+
+.logo{
+    flex-grow:1;
+}
+.nav-right{
+    
+    display:flex;
+    justify-content: flex-end;
+    flex-grow:1;   
+}
+
+.nav-right div:nth-child(2){
+    margin-left:13px;
+    margin-right:10px;
+}
+
+.m-menu{
+    display:none;
+}
+
+@media screen and ( max-width:476px) {
+    .navbar{
+        height: 15vh;
+        }
+
+    .nav-buttons, .nav-right{
+        display:none;
+    }
+
+    .m-menu{
+        display:block;  
+    }
+}
+
+
+    @media screen and ( max-height:400px) {
+        .navbar{
+            height: 20vh;
+            }
+    }
+
+    @media screen and ( max-height:150px) {
+
+        .navbar{
+            height: 30vh;
+            }
+    }
+
+    /* End NavBar */
+
+    /* Mobile Menu */
+    .mobileMenu{
+        padding-top:10px;
+        height: 80vh;
+        background-color: #2279c5;
+        display:none;
+        
+
+    }
+
+    .mobile-nav-button{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+
+       
+       
+    }
+
+    .mobile-nav-button li{
+      
+        text-align: center;
+        display: inline;
+        width: 100%;
+        height: 100px;
+    }
+
+    @media screen and ( max-width:476px) {
+        .mobileMenu{
+            display:block;
+            
+        } 
+    }
+
+    /* End Mobile Menu*/
+
+/*Products*/
+.container{
+    z-index: 1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+.card{
+    z-index: 1;
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 3px grey, -0.1em 0 .4em grey;
+}
+
+.card img{
+        z-index: -1;
+    height: 60%;
+
+}
+.card h6{
+    margin-top: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.card button{
+
+    width: 40%;
+    border-radius: 10px;
+    border-radius: none;
+    margin: auto;
+}
+/*End Products*/
+/* Cart || container and cart from products */
+.checkout{
+    margin-top: 100px;
+}
+.checkout button{
+    
+
+    border-radius: 10px;
+    border-radius: none;
+    
+}
+/*end Cart*/
+/* Footer */
+.footer{
+    position: fixed;
+    bottom: 0px;
+    margin-top: 15px;
+    z-index: 1000;
+    height: 6vh;
+    width: 100%;
+    color:#ffffff;
+    background-color: #0275d8;
+}
+
+.footer h6{
+    text-align: center;
+}
+/*end Footer*/
+
+/* Login */ 
+.form{
+    margin: auto;
+    width: 50%;
+    z-index: 1;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form button{
+    margin: auto;
+    margin-top: 20px;
+    width: 20%;
+    border-radius: 10px;
+    border-radius: none;
+}
+.form h6{
+    margin: auto;
+    margin-top: 20px ;
+}
+/* end Login */ 
+
+/*Register*/
+
+/*End Register*/
+
+/*Checkout*/
+.checkout-btns{
+    margin-left: 45%;
+    margin-top: 20px;
+}
+.checkout-btn{
+    width: 10%;
+    border-radius: 10px;
+    border-radius: none;
+    margin: auto;
+}
+/*end Checkout*/
+/*Order */
+.card-order{
+    z-index: 1;
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 3px grey, -0.1em 0 .4em grey;
+}
+
+.order-btn{
+    margin-left: 45%;
+    margin-top: 20px;
+    width: 10%;
+    border-radius: 10px;
+    border-radius: none;
+    
+}
+/*End Order*/
+/*admin */
+.admin-btns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 47%;
+    margin-top: 20px;
+}
+.admin-btn{
+    margin-top: 10px;
+    width: 10%;
+    border-radius: 10px;
+    border-radius: none;
+    
+}
+/*end admin */
+
+/*add product*/
+
+/*end product*/
